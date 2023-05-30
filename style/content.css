@@ -1,0 +1,289 @@
+.content {
+  margin-top: 1rem;
+  margin-bottom: 4rem;
+}
+
+.introduce .content h1 {
+  font-size: 3.5rem;
+  font-weight: lighter;
+}
+
+.introduce .content h1 span {
+  color: #28e98c;
+}
+
+.introduce .content p {
+  margin-top: 2rem;
+  font-size: 1rem;
+  text-align: justify;
+}
+
+.about .content .container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 1rem;
+  padding: 0 !important;
+}
+
+.about .content .container h4 {
+  color: #28e98c;
+}
+
+.about .content .container p {
+  font-size: 1.2rem;
+  text-align: justify;
+}
+
+.about .container .leftSide div {
+  margin-bottom: 1rem;
+  background-color: rgba(62, 62, 62, 0.302);
+  padding: 1rem;
+  border-radius: 10px;
+}
+.about .container .rightSide div {
+  margin-bottom: 1rem;
+  background-color: rgba(62, 62, 62, 0.302);
+  padding: 1rem;
+  border-radius: 10px;
+}
+
+.about a {
+  text-decoration: none;
+  color: #ffffff;
+  border: 1px solid gray;
+  padding: 0.5rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  border-radius: 30px;
+}
+.about a:hover {
+  color: #28e98c;
+
+  background-color: rgba(62, 62, 62, 0.302);
+}
+
+.content .eduCard {
+  margin-bottom: 2rem;
+  cursor: pointer;
+  transition: all 0.1s;
+}
+
+.content .eduCard h5 {
+  color: gray;
+  font-size: 1rem;
+}
+.content .eduCard h4 {
+  font-size: 1rem;
+}
+
+.content .eduCard h1 {
+  font-size: 1.7rem;
+}
+
+.content .eduCard:hover h5 {
+  color: #28e98c;
+}
+
+.skillsContainer {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  place-items: center;
+}
+.skillSet {
+  text-align: center;
+  cursor: pointer;
+}
+.skillSet p {
+  font-size: 1.3rem;
+  margin-top: 1rem;
+}
+.skillSetInner {
+  padding: 1rem;
+  display: grid;
+  place-items: center;
+  border: 2px solid gray;
+  border-radius: 100px;
+  height: 250px;
+  width: 180px;
+  transition: all 0.1s;
+}
+
+.skillSetInner img {
+  width: 70%;
+}
+.skillSetInner h1 {
+  font-size: 2rem;
+  color: #28e98c;
+}
+
+.skillSet:hover .skillSetInner {
+  border: 2px solid #28e98c;
+}
+
+.achievementCard {
+  background-color: rgba(62, 62, 62, 0.302);
+  border-radius: 10px;
+  padding: 2rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 1rem;
+  margin-bottom: 1rem;
+}
+
+.achievementCard img {
+  width: 90%;
+  height: 220px;
+  object-fit: contain;
+  background-color: rgba(62, 62, 62, 0.302);
+  border-radius: 5px;
+  padding: 0.5rem;
+}
+
+.achievementCard h3 {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #28e98c;
+}
+
+.achievementCard p {
+  text-align: justify;
+}
+
+.clubCard {
+  border: 1px solid rgba(128, 128, 128, 0.515);
+  border-radius: 10px;
+  padding: 2rem;
+  transition: all 0.2s;
+  display: grid;
+  grid-template-columns: 10fr 1fr;
+  transition: all 0.2s;
+  margin-bottom: 1rem;
+}
+.clubCard:hover {
+  border: 1px solid #28e98c;
+}
+
+.clubCard h3 {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.clubCard .clubCardRight {
+  color: #28e98c;
+  font-size: 2rem;
+}
+
+.contactt input,
+textarea {
+  border: 1px solid rgba(128, 128, 128, 0.515);
+
+  border-radius: 10px;
+  padding: 0.5rem;
+  width: 100%;
+  margin-bottom: 1rem;
+  background-color: rgba(62, 62, 62, 0.302);
+  color: #ffffff;
+}
+.contactt button {
+  border: 1px solid rgba(128, 128, 128, 0.515);
+  width: 100%;
+  /* background-color: rgba(62, 62, 62, 0.302); */
+  background-color: inherit;
+
+  border-radius: 30px;
+  padding: 0.5em;
+  color: #ffffff;
+}
+
+.contactt button:hover {
+  background-color: rgba(62, 62, 62, 0.302);
+  color: #28e98c;
+}
+
+@media screen and (max-width: 1600px) {
+  .skillsContainer {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    place-items: center;
+  }
+}
+@media screen and (max-width: 1300px) {
+  .skillsContainer {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    place-items: center;
+  }
+}
+@media screen and (max-width: 1024px) {
+  .skillsContainer {
+    display: grid;
+    grid-template-columns: 1fr;
+    place-items: center;
+  }
+}
+
+@media screen and (max-width: 769px) {
+  .introduce .content h1 {
+    font-size: 2.5rem;
+  }
+
+  .introduce .content p {
+    margin-top: 2rem;
+    font-size: 1rem;
+    text-align: justify;
+  }
+  .about .content .container {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+
+  .content .eduCard h5 {
+    color: gray;
+    font-size: 1rem;
+  }
+  .content .eduCard h4 {
+    font-size: 1rem;
+  }
+
+  .content .eduCard h1 {
+    font-size: 1.7rem;
+  }
+  .skillsContainer {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    place-items: center;
+  }
+
+  .skillSetInner {
+    height: 200px;
+    width: 130px;
+  }
+
+  .achievementCard {
+    background-color: rgba(62, 62, 62, 0.302);
+    border-radius: 10px;
+    padding: 2rem;
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+
+  .achievementCard img {
+    width: 100%;
+    height: 220px;
+    object-fit: content;
+    background-color: rgba(62, 62, 62, 0.302);
+    border-radius: 10px;
+    margin-bottom: 0.5rem;
+  }
+}
+
+.animate-on-scroll {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: opacity 0.5s, transform 0.5s;
+}
+
+.animate-on-scroll.animate {
+  opacity: 1;
+  transform: translateY(0);
+}
