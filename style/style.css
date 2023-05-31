@@ -90,8 +90,17 @@ aside a::after {
 .projects_menu::after {
   content: "Projects";
 }
+.cp_menu::after {
+  content: "Competitive Programming";
+}
+.course_menu::after {
+  content: "Course";
+}
 .club_menu::after {
   content: "Club Activities";
+}
+.social_menu::after {
+  content: "Social Activities";
 }
 
 aside a:hover::after {
